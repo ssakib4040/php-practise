@@ -124,6 +124,16 @@
 //     echo "Welcome new user!";   
 // }
 
+// session
+// session_start();
+
+// if(!isset($_SESSION['views'])) {
+//     $_SESSION['views'] = 0;
+//     echo "This is your first visit!";
+// }else{
+//     $_SESSION['views']++;
+//     echo "Page views: " . $_SESSION['views'];
+// }
 
 
 
