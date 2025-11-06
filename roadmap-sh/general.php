@@ -135,10 +135,32 @@
 //     echo "Page views: " . $_SESSION['views'];
 // }
 
+// !mysqli connection
+// $servername = "localhost";
+// $username = "username";
+// $password = "password";
+// $dbname = "myDB";
+
+// // Create connection
+// $conn = new mysqli($servername, $username, $password, $dbname);
+
+// // Check connection
+// if ($conn->connect_error) {
+//   die("Connection failed: " . $conn->connect_error);
+// }
+// echo "Connected successfully";
 
 
-
-
+// ! PDO connection
+// try {
+//     $pdo = new PDO('mysql:host=localhost;dbname=test', 'username', 'password');
+//     $stmt = $pdo->query('SELECT * FROM myTable');
+//     while ($row = $stmt->fetch()) {
+//         echo $row['name'] . "\n";
+//     }
+// } catch (PDOException $e) {
+//     echo "Connection failed: " . $e;
+// }
 
 
 
