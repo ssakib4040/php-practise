@@ -1,5 +1,62 @@
 <?php
 
+// ! define
+// define("SITE_NAME", "My Awesome Site");
+// echo "Welcome to " . SITE_NAME . "!\n";
+
+// ! var_dump
+
+// $array = ["john", "jane"];
+// echo "<pre>";
+// print_r($array);
+// echo "</pre>";
+
+// ! type casting
+// ? string to int
+// $str = "123";
+// $int = (int)$str; // or intval($str)
+// echo $int;
+
+// ? int to float
+// $int = 123;
+// $float = (float)$int; // or floatval($int)
+
+// get type 
+// echo gettype($float); // Outputs: double
+
+// ? boolean to int
+// $bool = true;
+// $int = (int)$bool; // or intval($bool)
+// echo $int; // Outputs: 1
+
+// ? boolean to string
+// $bool = false;
+// $str = (string)$bool; // or strval($bool)
+// echo $str; // Outputs: 1
+
+
+
+
+// ! scopes in php
+// $my_value = "Hello, World!";
+// echo "<pre>";
+// print_r($GLOBALS);
+// echo "</pre>";
+
+// function myFunction() {
+//     global $my_value;
+//     echo $my_value;
+// }
+
+// myFunction(); // Outputs: Hello, World!
+
+
+// echo "Current PHP version: " . PHP_VERSION;
+
+
+// ! what is php 
+// echo "PHP stands for Hypertext Preprocessor." ;
+
 // echo "Hello, World!";
 
 // ! match expression
@@ -162,104 +219,5 @@
 //     echo "Connection failed: " . $e;
 // }
 
+echo "\n";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-print "\n";
