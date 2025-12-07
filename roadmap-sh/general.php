@@ -1,4 +1,69 @@
+<form action="/" method="post" enctype="multipart/form-data">
+    <input type="file" name="uploadFile" />
+    <input type="submit" value="Upload" />
+</form>
+
 <?php
+
+// ! file upload
+echo "<pre>";
+print_r($_FILES);
+echo "</pre>";
+
+// ! CSV processing
+// $file = fopen(__DIR__ . "/sample.csv", "r");
+
+// function startElement($parser, $name, $attrs) {
+//     echo "Start: $name\n";
+//     if (!empty($attrs)) {
+//         print_r($attrs);
+//     }
+// }
+
+// function endElement($parser, $name) {
+//     echo "End: $name\n";
+// }
+
+// function characterData($parser, $data) {
+//     $data = trim($data);
+//     if ($data !== '') {
+//         echo "Data: $data\n";
+//     }
+// }
+
+// $xml_data = file_get_contents(__DIR__ . "/data.xml");
+
+// $parser = xml_parser_create();
+
+
+// echo "<pre>";
+// // event handlers
+// xml_set_element_handler($parser, "startElement", "endElement");
+// xml_set_character_data_handler($parser, "characterData");
+
+// // parse
+// xml_parse($parser, $xml_data);
+
+// // free resources
+// xml_parser_free($parser);
+
+// echo "</pre>";
+
+
+
+// ! JSON processing
+// // Create an array
+// $data = array('a' => 1, 'b' => 2, 'c' => 3);
+
+// // Encode the array into a JSON string
+// $json = json_encode($data);
+// // echo $json;
+
+// $decoded = json_decode($json, true);
+// print_r($decoded);
+
+// ! file permission
+// echo chmod(__DIR__ . "/data.json", 0750); // true
 
 // ! writing file
 // $myfile = fopen(__DIR__ . "/testfile.txt", "w") or die("Unable to open file!");

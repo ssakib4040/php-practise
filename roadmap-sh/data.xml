@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+  <book category="fiction">
+    <title lang="en">The Great Adventure</title>
+    <author>Jane Doe</author>
+    <year>2023</year>
+    <price>19.99</price>
+  </book>
+  <book category="non-fiction">
+    <title lang="en">The History of Everything</title>
+    <author>John Smith</author>
+    <year>2020</year>
+    <price>25.50</price>
+  </book>
+</bookstore>
