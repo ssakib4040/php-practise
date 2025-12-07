@@ -1,5 +1,107 @@
 <?php
 
+
+
+// ! variadic functions
+// function studentsAttendence( ...$students) {
+//     $count = count($students);
+
+//     if ($count === 0) {
+//         return "";
+//     }
+
+//     if ($count === 1) {
+//         return $students[0];
+//     }
+
+//     // get all except last
+//     $allButLast = array_slice($students, 0, -1);
+
+//     // get last item
+//     $last = end($students);
+
+//     return print_r($last);
+
+//     // join them with commas and add "and" before the last item
+//     return implode(", ", $allButLast) . " and " . $last;
+// }
+
+// echo studentsAttendence("Math", "Alice", "Bob", "Charlie");
+
+// function sum(...$numbers) {
+//     return array_sum($numbers);
+// }
+// echo sum(1, 2, 3, 4);
+
+
+// ! recusive
+// function countdown($n){
+//     if($n <= 0){
+//         echo "Done!\n";
+//         return;
+//     }else{
+//         echo $n . "\n";
+//         echo "<br/>";
+//         return countdown($n - 1);
+//     }
+// }
+
+//  countdown(9999);
+
+// ! arrow function
+// $getVal = fn($x) => $x * 2;
+// echo $getVal(5); // Outputs: 10
+
+// ! arrays
+// $dom = array(
+//     "id" => 1,
+//     "children" => array(
+//         array(
+//             "id" => 2,
+//             "children" => null
+//         ),
+//         array(
+//             "id" => 3,
+//             "children" => array(
+//                 array(
+//                     "id" => 4,
+//                     "children" => null
+//                 )
+//             )
+//         )   
+//     )
+// );
+// echo "<pre>";
+// print_r(json_encode($dom, 128));
+// echo "</pre>";
+
+// echo JSON_PRETTY_PRINT;
+
+
+// ! nullsafe operator
+// $session = array(
+//     'user' => array(
+//         'profile' => null
+//     )
+// );
+
+// echo $session?->user?->profile?->name;
+// ! null coalescing operator
+// $GET['username'] = 'alice';
+// $_GET['username'] = 'alice';
+
+// $username = $_GET['username'] ?? 'guest';
+// echo "Hello, " . htmlspecialchars($username) . "!\n";
+
+// ! match
+// $message = match (400) {
+//   200, 300 => 'OK',
+//   400 => 'error',
+//   default => 'unknown status code',
+// };
+
+// echo $message;
+
 // ! define
 // define("SITE_NAME", "My Awesome Site");
 // echo "Welcome to " . SITE_NAME . "!\n";
