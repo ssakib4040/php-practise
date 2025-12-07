@@ -1,6 +1,15 @@
+<form method="name" action="/">
+  Name: <input type="text" name="fname">
+  <input type="submit">
+</form>
+
 <?php
 
 
+// ! http method
+echo "<pre>";
+    print_r($_SERVER);
+echo "</pre>";
 
 // ! variadic functions
 // function studentsAttendence( ...$students) {
