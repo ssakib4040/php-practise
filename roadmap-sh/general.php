@@ -6,15 +6,15 @@
 <?php
 
 // ! session
-// session_start();
+session_start();
 
-// if(!isset($_SESSION['views'])) {
-//     $_SESSION['views'] = 0;
-//     echo "This is your first visit!\n";
-// }else{
-//     $_SESSION['views']++;
-//     echo "Page views: " . $_SESSION['views'] . "\n";
-// }
+if(!isset($_SESSION['views'])) {
+    $_SESSION['views'] = 0;
+    echo "This is your first visit!\n";
+}else{
+    $_SESSION['views']++;
+    echo "Page views: " . $_SESSION['views'] . "\n";
+}
 
 // setcookie("user", "John Doe", time() + (86400 * 30), "/"); // 86400 = 1 day
 
