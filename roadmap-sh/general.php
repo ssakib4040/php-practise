@@ -1,15 +1,40 @@
-<form method="name" action="/">
-  Name: <input type="text" name="fname">
-  <input type="submit">
-</form>
-
 <?php
 
+// ! writing file
+// $myfile = fopen(__DIR__ . "/testfile.txt", "w") or die("Unable to open file!");
+
+// ! appending file
+// $file = 'new-user.txt';
+// $current = file_get_contents($file);
+// print_r($current);
+
+// ! reading file
+// $file = fopen(__DIR__ . "/data.json", "r"); 
+
+// $jsonString = fread($file, filesize(__DIR__ . "/data.json"));
+// echo json_encode(json_decode($jsonString));
+
+// if ($file) {
+//     echo "<pre style='white-space: pre-wrap;'>";
+//     while (($line = fgets($file)) !== false) {
+//         echo $line;
+//     }
+//     echo "</pre>";
+//     fclose($file);
+// } else {
+//     echo 'Error opening file';
+// }
+
+//! require_once(__DIR__ .'./module1.php');
+    
+// // echo sum(1, 2, 3, 4, 5); // Outputs: 15
+// $db = new Database('localhost', 'root', '', 'test_db');
+// $results = $db->query('SELECT * FROM users');
 
 // ! http method
-echo "<pre>";
-    print_r($_SERVER);
-echo "</pre>";
+// echo "<pre>";
+//     print_r($_SERVER);
+// echo "</pre>";
 
 // ! variadic functions
 // function studentsAttendence( ...$students) {
