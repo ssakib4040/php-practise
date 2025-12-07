@@ -5,10 +5,34 @@
 
 <?php
 
+// ! session
+// session_start();
+
+// if(!isset($_SESSION['views'])) {
+//     $_SESSION['views'] = 0;
+//     echo "This is your first visit!\n";
+// }else{
+//     $_SESSION['views']++;
+//     echo "Page views: " . $_SESSION['views'] . "\n";
+// }
+
+// setcookie("user", "John Doe", time() + (86400 * 30), "/"); // 86400 = 1 day
+
+// ! cookie
+// echo "<pre>";
+// // print_r($_COOKIE);
+
+// foreach ($_COOKIE as $key => $value) {
+//     // echo cookie expire date
+//     echo "Cookie Name: " . htmlspecialchars($key) . ", Value: " . htmlspecialchars($value) . "\n";
+// }
+
+// echo "</pre>";
+
 // ! file upload
-echo "<pre>";
-print_r($_FILES);
-echo "</pre>";
+// echo "<pre>";
+// print_r($_FILES);
+// echo "</pre>";
 
 // ! CSV processing
 // $file = fopen(__DIR__ . "/sample.csv", "r");
