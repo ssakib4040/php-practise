@@ -5,16 +5,33 @@
 
 <?php
 
-// ! session
-session_start();
 
-if(!isset($_SESSION['views'])) {
-    $_SESSION['views'] = 0;
-    echo "This is your first visit!\n";
-}else{
-    $_SESSION['views']++;
-    echo "Page views: " . $_SESSION['views'] . "\n";
-}
+//!  Generate CSRF token
+// https://www.phptutorial.net/php-tutorial/php-csrf/
+// if(empty($_SESSION['csrf'])) {
+//     $_SESSION['csrf'] = bin2hex(random_bytes(32));
+// }
+
+// // Verify CSRF token
+// if(isset($_POST['csrf']) && $_POST['csrf'] === $_SESSION['csrf']) {
+//     // valid CSRF token, perform action
+// }
+
+// ! xss
+// $raw_text = '<script>alert("XSS Attack!");</script>';
+// $secure_text = htmlspecialchars($raw_text, ENT_QUOTES, 'UTF-8');
+// echo $secure_text;
+
+// ! session
+// session_start();
+
+// if(!isset($_SESSION['views'])) {
+//     $_SESSION['views'] = 0;
+//     echo "This is your first visit!\n";
+// }else{
+//     $_SESSION['views']++;
+//     echo "Page views: " . $_SESSION['views'] . "\n";
+// }
 
 // setcookie("user", "John Doe", time() + (86400 * 30), "/"); // 86400 = 1 day
 
