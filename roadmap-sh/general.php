@@ -1,10 +1,66 @@
-<form action="/" method="post" enctype="multipart/form-data">
+<!-- <form action="/" method="post" enctype="multipart/form-data">
     <input type="file" name="uploadFile" />
     <input type="submit" value="Upload" />
-</form>
+</form> -->
 
 <?php
 
+
+
+// ! inheritence
+// class Vehicle {
+//     public $color;  
+
+//     public function drive(){
+//         echo "Driving a vehicle\n";
+//     }
+// }
+
+// class Car extends Vehicle {
+//     public $brand;
+
+//     public function honk(){
+//         echo "Beep Beep!\n";
+//     }
+// }
+
+// $car = new Car();
+
+// echo "<pre>";
+// print_r($car);
+// echo "</pre>";
+
+// ! construct & destruct
+// class TestClass{
+//     public $value = "undefined";
+//     private $private = "secret";
+//     protected $protected = "hidden";
+
+//     public static $staticValue = "I am static";
+
+//     public function __construct($value){
+//         $this -> value = $value;
+//     }
+
+//     public function getValue(){
+//         return $this -> value;
+//     }
+
+//     public static function getStaticValue(){
+//         return self::$staticValue;
+//     }
+
+//     public function __destruct(){
+//         // echo "Destroying " . $this -> value;
+//     }
+// }
+
+// $class = new TestClass("My Object");
+// echo "<pre>";
+// print_r($class);
+
+// echo TestClass -> getStaticValue();
+// echo "</pre>";
 
 //!  Generate CSRF token
 // https://www.phptutorial.net/php-tutorial/php-csrf/
