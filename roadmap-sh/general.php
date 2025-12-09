@@ -5,7 +5,128 @@
 
 <?php
 
+// ! magic methods
+// class A {
+//     function __debugInfo() {
+//         return ['x' => 123];
+//     }
+// }
 
+// var_dump(new A()); // shows only x => 123
+
+// class A {
+//     function __clone() {
+//         echo "Cloned!";
+//     }
+// }
+
+// $a = new A();
+// $b = clone $a; // Cloned!
+
+
+// class A {
+//     function __call($name, $args) {
+//         echo "Method $name does not exist";
+//     }
+// }
+
+// $a = new A();
+// $a->hello(); // Method hello does not exist
+
+
+// ! namespace
+// require_once(__DIR__ . '/module1.php');
+// require_once(__DIR__ . '/binary.php');
+
+// use RoadmapSh\Module\Logger as ModuleLogger;
+// use RoadmapSh\Binary\Logger as BinaryLogger;
+
+// ModuleLogger::log("This is a module log message.");
+// echo "<br />";
+// BinaryLogger::log("This is a binary log message.");
+
+
+// ! interface
+// interface Animal {
+//     public function speak();
+// }
+
+// class Dog implements Animal {
+//     // MISSING speak()
+// }
+
+
+// interface iTemplate {
+//     public function setVariable($name, $var);
+//     public function getHtml($template); 
+// }
+
+// class Template implements iTemplate {
+//     private $vars = array();
+
+//     // public function setVariable($name, $var) {
+//     //     $this->vars[$name] = $var;
+//     // }
+
+//     public function getHtml($template) {
+//         foreach($this->vars as $name => $value) {
+//             $template = str_replace('{' . $name . '}', $value, $template);
+//         }
+//         return $template;
+//     }
+// }
+
+// echo "<pre>";
+// $template = new Template();
+// // $template->setVariable('title', 'Hello World');
+// // $template->setVariable('body', 'This is a simple templating engine.');
+// $html = $template->getHtml('<h1>{title}</h1><p>{body}</p>');
+// print_r($html);
+// echo "</pre>";
+
+
+//  ! abstraction
+// abstract class AbstractClass
+// {
+//     // Force extending class to define this method
+//     abstract protected function getValue();
+//     abstract protected function prefixValue($prefix);
+
+//     // Common method
+//     public function printOut()
+//     {
+//         print $this->getValue() . "\n";
+//     }
+// }
+
+// echo "<pre>";
+// print_r(AbstractClass::printOut());
+// echo "</pre>";
+
+// ! polymorphism
+// interface Shape {
+//   public function draw();
+// }
+
+// class Circle implements Shape {
+//   public function draw() {
+//     echo "Draw a circle";
+//   }
+// }
+
+// class Rectangle implements Shape {
+//   public function draw() {
+//     echo "Draw a rectangle";
+//   }
+// }
+
+// function drawShape(Shape $shape) {
+//   $shape->draw();
+// }
+
+// $circle = new Circle() ;
+// $circle -> draw();  
+// drawShape(new Rectangle()); 
 
 // ! inheritence
 // class Vehicle {

@@ -1,11 +1,11 @@
 <?php
 
-namespace RoadmapSh\Module;
+namespace RoadmapSh\Binary;
 
 class Logger{
     private $value;
  
     public static function log($message){
-        echo "[MODULE LOG]: " . $message . "\n";
+        echo "[BINARY LOG]: " . $message . "\n";
     }
 }
