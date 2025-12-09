@@ -5,6 +5,29 @@
 
 <?php
 
+
+
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// // ! spl autoload
+// spl_autoload_register(function ($class) {
+//     echo "Loading: $class<br>";
+//     require "classes/" . $class . ".php";
+
+// });
+// echo "yee";
+
+// $user = new User("John Doe", "john@example.com");
+// echo "Name: " . $user->getName() . "<br>";
+
+// ! packagist & composer
+// require_once './vendor/autoload.php';
+
+// $faker = Faker\Factory::create();
+// echo $faker->firstname();
+// echo $faker->lastname();
+
+
 // ! magic methods
 // class A {
 //     function __debugInfo() {
