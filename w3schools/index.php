@@ -36,7 +36,7 @@
 // $car = new Car();         // create an object
 // $car->brand = "Tesla";
 // $car->color = "red";
-// echo $car->drive();   
+// echo $car->drive();
 
 // constructor and properties
 
@@ -61,7 +61,7 @@
 // Visibility: public, protected, private
 // class Account{
 //     private $balance;
-     
+
 //     public function deposit($amount){
 //         $this -> balance += $amount;
 //     }
@@ -148,19 +148,23 @@
 
 
 
-// traits 
-trait HasUniqueId {
-    public function generateId(): string {
+// traits
+trait HasUniqueId
+{
+    public function generateId(): string
+    {
         return uniqid('el_', true);
     }
 }
 
 
-class Section {
+class Section
+{
     use HasUniqueId;
 }
 
-class Widget {
+class Widget
+{
     use HasUniqueId;
 }
 

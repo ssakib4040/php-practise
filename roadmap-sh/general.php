@@ -5,7 +5,74 @@
 
 <?php
 
+// ! error_reporting(E_ALL);
+// ini_set('display_errors', 0);
 
+// echo "<pre>"
+
+
+//  ! xdebug
+// xdebug_start_trace();
+
+// Your code here...
+
+// xdebug_stop_trace();
+
+
+// ! environment variables
+// putenv("ENV=bar");   
+
+// SOLUTION 1: Use ?: operator (works with false values)
+// echo getenv("ENV") ?: "Noo";
+
+// SOLUTION 2: Use $_ENV superglobal with ?? (it returns null for missing keys)
+// echo $_ENV["ENV"] ?? "Noo";
+
+// SOLUTION 3: Explicit check
+// echo getenv("ENV") !== false ? getenv("ENV") : "Noo";
+// echo getenv("ENV") !== false ? getenv("ENV") : "Noo";
+// echo "\n";
+
+
+// ! process control (linux only)
+// $pid = pcntl_fork();
+// if ($pid == -1) {
+//      die('could not fork');
+// } else if ($pid) {
+//      // we are the parent
+//      pcntl_wait($status); // Protect against Zombie children
+// } else {
+//      // we are the child
+// }
+
+// ! system execution
+// system('php --help', $output);
+
+// echo "<pre>";
+// print_r($output);
+// echo "</pre>";
+
+// // foreach($output as $out){
+// //     echo $out, PHP_EOL;
+// //     echo "<br />";
+// // }
+
+// ! system customization
+// $array = range(1, 1_000_000); // very heavy
+// echo "<pre>";
+// print_r($array);
+// echo "</pre>";
+
+// // Updating memory_limit
+// ini_set('memory_limit','256M');
+
+// // Updating max_execution_time
+// ini_set('max_execution_time', '1');
+
+// echo ini_get('memory_limit');
+// echo "\n";
+// echo ini_get('max_execution_time');
+// echo "\n";
 
 // error_reporting(E_ALL);
 // ini_set('display_errors', 1);
@@ -81,7 +148,7 @@
 
 // interface iTemplate {
 //     public function setVariable($name, $var);
-//     public function getHtml($template); 
+//     public function getHtml($template);
 // }
 
 // class Template implements iTemplate {
@@ -148,12 +215,12 @@
 // }
 
 // $circle = new Circle() ;
-// $circle -> draw();  
-// drawShape(new Rectangle()); 
+// $circle -> draw();
+// drawShape(new Rectangle());
 
 // ! inheritence
 // class Vehicle {
-//     public $color;  
+//     public $color;
 
 //     public function drive(){
 //         echo "Driving a vehicle\n";
@@ -315,7 +382,7 @@
 // print_r($current);
 
 // ! reading file
-// $file = fopen(__DIR__ . "/data.json", "r"); 
+// $file = fopen(__DIR__ . "/data.json", "r");
 
 // $jsonString = fread($file, filesize(__DIR__ . "/data.json"));
 // echo json_encode(json_decode($jsonString));
@@ -332,7 +399,7 @@
 // }
 
 //! require_once(__DIR__ .'./module1.php');
-    
+
 // // echo sum(1, 2, 3, 4, 5); // Outputs: 15
 // $db = new Database('localhost', 'root', '', 'test_db');
 // $results = $db->query('SELECT * FROM users');
@@ -408,7 +475,7 @@
 //                     "children" => null
 //                 )
 //             )
-//         )   
+//         )
 //     )
 // );
 // echo "<pre>";
@@ -463,7 +530,7 @@
 // $int = 123;
 // $float = (float)$int; // or floatval($int)
 
-// get type 
+// get type
 // echo gettype($float); // Outputs: double
 
 // ? boolean to int
@@ -496,7 +563,7 @@
 // echo "Current PHP version: " . PHP_VERSION;
 
 
-// ! what is php 
+// ! what is php
 // echo "PHP stands for Hypertext Preprocessor." ;
 
 // echo "Hello, World!";
@@ -511,7 +578,7 @@
 
 // echo $message;
 
-// ! null coalescing assignment operator 
+// ! null coalescing assignment operator
 // $data = [
 //     "name" => "John Doe",
 //     // "age" => 30
@@ -543,7 +610,7 @@
 // }
 
 
-// json 
+// json
 // Create an array
 // $data = array('a' => 1, 'b' => 2, 'c' => 3);
 
@@ -597,7 +664,7 @@
 //     echo "You must enter a valid login ID and password to access this resource\n";
 //     exit;
 // }
- 
+
 // if (!isset($_SERVER['PHP_AUTH_USER']) ||
 //     ($_POST['SeenBefore'] == 1 && $_POST['OldAuth'] == $_SERVER['PHP_AUTH_USER'])) {
 //     authenticate();
@@ -620,7 +687,7 @@
 //     echo "Welcome back " . htmlspecialchars($_COOKIE["user"]) . "!";
 //     echo "Welcome back " . htmlspecialchars($_COOKIE["wordpress_test_cookie"]) . "!";
 // } else {
-//     echo "Welcome new user!";   
+//     echo "Welcome new user!";
 // }
 
 // session
@@ -662,4 +729,3 @@
 // }
 
 echo "\n";
-
