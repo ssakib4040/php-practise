@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "npx nodemon --exec 'php -S localhost:5000 ./roadmap-sh/general.php'"
+  },
   "dependencies": {
     "playwright": "^1.57.0"
   }
